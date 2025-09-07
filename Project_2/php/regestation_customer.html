@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <title>Форма реєстрації</title>
+    
+    <link rel="stylesheet" href="../css/regestration.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Реєстрація</h1>
+
+        <h3>Будь ласка, заповніть цю форму, щоб створити обліковий запис.</h3>
+        
+
+        <form action="../php/register_customer.php" method="POST">
+            
+           
+            <label for="first_name"><b>Ім'я</b></label>
+            <input type="text" placeholder="Введіть ім'я" name="first_name" required>
+        
+            
+            <label for="email"><b>Електронна пошта</b></label>
+            <input type="email" placeholder="Введіть електронну пошту" name="email" required>
+        
+
+            <label for="user_password"><b>Пароль</b></label>
+            <input type="password" placeholder="Введіть пароль" name="user_password" required>
+        
+ 
+            <label for="repeatpass"><b>Повторний пароль</b></label>
+            <input type="password" placeholder="Повторіть пароль" name="repeatpass" required>
+        
+
+            <p class="terms">
+                Створюючи обліковий запис, ви погоджуєтеся з нашими 
+                <a href="https://policies.google.com/privacy?hl=uk" style="color:dodgerblue">Умовами та конфіденційністю</a>.
+            </p>
+   
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </div>
+</body>
+</html>
+

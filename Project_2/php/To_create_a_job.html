@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення творчої роботи</title>
+
+    <link rel="stylesheet" href="../css/To_create_a_job.css">
+</head>
+<body>
+
+
+    <h1 style="text-align: center;">Створення творчої роботи</h1>
+
+   
+    <form action="../php/to_create_a_job.php" method="post" enctype="multipart/form-data">
+        
+
+        <label for="title">Назва роботи:</label>
+        <input type="text" id="title" name="title" required> 
+
+        
+        <label for="genres">Жанр картини:</label>
+        <select id="genres" name="genres[]" multiple>
+            <option value="натюрморт">Натюрморт</option>
+            <option value="портрет">Портрет</option>
+            <option value="історичний">Історичний жанр</option>
+            <option value="пейзаж">Пейзаж</option>
+            <option value="абстракція">Абстракція</option>
+        </select>
+
+        <small>Щоб вибрати кілька жанрів, утримуйте Ctrl (Windows) або Command (Mac).</small>
+
+     
+        <label for="description_">Опис картини:</label>
+        <textarea id="description_" name="description_" rows="4" required></textarea> 
+     
+        <label for="materials">Матеріали:</label>
+        <input type="text" id="materials" name="materials" required> 
+
+        <label for="photo">Фото картини:</label>
+        <input type="file" id="photo_path" name="photo_path" accept="image/jpeg, image/png" required> <
+        <input type="submit" value="Опублікувати">
+    </form>
+
+</body>
+</html>
+
