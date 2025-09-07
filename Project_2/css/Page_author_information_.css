@@ -3,8 +3,8 @@
     height: 50px;
     border-radius: 30%;
     object-fit: cover;
-    float: right; /* Перемещает влево */
-    margin-right: 10px; /* Добавляет отступ справа */
+    float: right; 
+    margin-right: 10px; 
 }  
 body{
     background-color: darkkhaki;
@@ -25,4 +25,5 @@ body{
     }
     .gallery img:hover {
         transform: scale(1.05);
+
     }
