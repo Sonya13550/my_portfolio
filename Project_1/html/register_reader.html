@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Форма реєстрації</title>
+    <link rel="stylesheet" href="../css/register_page.css">
+</head>
+
+<body>
+    <form action="../php/register_reader.php" method="POST">
+        <h2 style="text-align: center; color: rgb(30, 193, 60);">Реєстрація</h2>
+        <div class="form-container">
+  <!--  <p>Заповнюємо дані по реєстрації </p> -->
+            <center>
+           <input type="hidden" name="user_role" id="roleInput" value="reader">
+
+                <label for="last_name">Прізвище:</label><br>
+                <input type="text" placeholder="Прізвище" name="last_name" required /><br><br>
+
+                <label for="first_name">Ім'я:</label><br>
+                <input type="text" placeholder="Ім'я" name="first_name" required /><br><br>
+
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" placeholder="Електронна пошта" name="email" required /><br><br>
+
+                <label for="pass">Пароль:</label><br>
+                <input type="password" placeholder="Пароль" name="pass" required /><br><br>
+
+                <label for="repeatpass">Повторіть пароль:</label><br>
+                <input type="password" placeholder="Повторіть пароль" name="repeatpass" required /><br><br>
+  <!--  <p>Кнопка реєстрації </p> -->
+                <button type="submit">Зареєструватися</button>
+            </center>
+
+        </div>
+    </form>
+</body>
+</html>
+
