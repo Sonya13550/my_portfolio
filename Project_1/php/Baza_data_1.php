@@ -1,9 +1,9 @@
 <?php
 // Параметри підключення до бази даних
-$servername = "DESKTOP-PTH1V72\SQLEXPRESS";
-$username = "Sonya_2025";
-$password = "Sonya_2025";
-$dbname = "Sales";
+$servername = "";
+$username = "";
+$password = "";
+$dbname = "";
 
 // Масив з інформацією для підключення
 $connectionInfo = array( 
@@ -27,3 +27,4 @@ else
     die( print_r( sqlsrv_errors(), true));  
 }  
 ?>
+
