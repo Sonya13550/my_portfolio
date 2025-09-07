@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <!-- Встановлення правильного кодування документа -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Форма реєстрації</title>
+    <!-- Підключення зовнішнього стилю для оформлення сторінки -->
+    <link rel="stylesheet" href="../css/register_page.css">
+</head>
+
+<body>
+    <!-- Форма реєстрації користувача -->
+    <form action="../php/register_writer.php" method="POST">
+        <!-- Заголовок форми -->
+        <h2 style="text-align: center; color: rgb(30, 193, 60);">Реєстрація</h2>
+        
+        <!-- Контейнер для введення даних користувача -->
+        <div class="form-container">
+            <!-- Введення прізвища -->
+            <center>
+                <label for="last_name">Прізвище:</label><br>
+                <input type="text" placeholder="Прізвище" name="last_name"  /><br><br>
+
+                <!-- Введення імені -->
+                <label for="first_name">Ім'я:</label><br>
+                <input type="text" placeholder="Ім'я" name="first_name"  /><br><br>
+
+                <!-- Введення електронної пошти -->
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" placeholder="Електронна пошта" name="email"  /><br><br>
+
+                <!-- Введення пароля -->
+                <label for="pass">Пароль:</label><br>
+                <input type="password" placeholder="Пароль" name="pass"  /><br><br>
+
+                <!-- Повторне введення пароля -->
+                <label for="repeatpass">Повторіть пароль:</label><br>
+                <input type="password" placeholder="Повторіть пароль" name="repeatpass"  /><br><br>
+
+                <!-- Кнопка для відправки форми -->
+                <button type="submit">Зареєструватися</button>
+            </center>
+
+        </div>
+    </form>
+</body>
+</html>
