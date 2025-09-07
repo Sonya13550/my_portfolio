@@ -1,7 +1,7 @@
 <?php
 require_once('Baza_data_1.php');
 
-// Запрос даниз з таблиці користувачів
+
 $query = "SELECT last_name, first_name, email FROM Users ORDER BY last_name ASC";
 $stmt = sqlsrv_query($conn, $query);
 
@@ -18,14 +18,14 @@ if (!$stmt) {
     <link rel="stylesheet" href="../css/table.css">
 </head>
 <body>
-    <!-- Кнопка для виходу з облікового запису -->
+ 
         <button class="exit-btn" onclick="exitAccount()">Вийти</button>
 
-        <!-- Скрипт для обробки виходу з облікового запису -->
+      
         <script>
             function exitAccount() {
-                alert('Ви вийшли з облікового запису');  // Повідомлення про вихід
-                window.location.href = 'Home_stories.html';  // Перехід на головну сторінку після виходу
+                alert('Ви вийшли з облікового запису');  
+                window.location.href = 'Home_stories.html';  
             }
         </script>
     <table>
@@ -55,3 +55,4 @@ if (!$stmt) {
     ?>
 </body>
 </html>
+
