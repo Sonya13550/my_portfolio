@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Вхід</title>
+    <link rel="stylesheet" href="../css/home_page.css">
+</head>
+
+<body style="background-color:powderblue;">
+    <div class="form-container">
+    
+        <form action="../php/enter.php" method="post" class="registration-form">
+            <center><h2>Оберіть ким ви будете</h2></center>
+            
+            
+            <center> 
+                <input type="radio" id="reader" name="role" value="reader" onclick="showOptions()">
+                <label for="reader">Читач</label>
+            </center>
+
+            <center> 
+                <input type="radio" id="writer" name="role" value="writer" onclick="showOptions()">
+                <label for="writer">Письменник</label>
+            </center>
+
+            <center> 
+                <input type="radio" id="admin" name="role" value="admin" onclick="showOptions()">
+                <label for="admin">Адміністратор</label>
+            </center>
+
+           
+            <div id="options" style="display: none;">
+                <center><h3>Оберіть дію</h3></center>
+
+                <center> 
+                    <input type="radio" id="register" name="action" value="register" onclick="enableSubmit()">
+                    <label for="register">Зареєструватися</label>
+                </center>
+
+                <center> 
+                    <input type="radio" id="login" name="action" value="login" onclick="enableSubmit()">
+                    <label for="login">Увійти</label>
+                </center>
+            </div>
+
+       
+            <input type="hidden" id="user_role" name="user_role">
+
+       
+            <center> 
+                <button type="submit" id="submitButton" disabled>Ваш вибір</button>
+            </center>
+        </form>
+    </div>
+
+    <script>
+       
+        document.addEventListener("DOMContentLoaded", function () {
+           
+            let roleInputs = document.querySelectorAll('input[name="role"]');
+            let actionInputs = document.querySelectorAll('input[name="action"]');
+            let userRoleInput = document.getElementById("user_role");
+            let submitButton = document.getElementById("submitButton");
+
+           
+            roleInputs.forEach(input => {
+                input.addEventListener("change", function () {
+               
+                    userRoleInput.value = this.value;
+                   
+                    document.getElementById("options").style.display = "block";
+                   
+                    submitButton.disabled = true;
+                });
+            });
+
+           
+            actionInputs.forEach(input => {
+                input.addEventListener("change", function () {
+            
+                    submitButton.disabled = false;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+</html>
