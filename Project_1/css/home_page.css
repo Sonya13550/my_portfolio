@@ -1,0 +1,62 @@
+body {
+            background-color: powderblue;
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h2, h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-left: 10px;
+            font-size: 22px;
+        }
+
+        input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+        }
+
+        .option-block {
+            margin: 20px 0;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 15px 40px;
+            font-size: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover:enabled {
+            background-color: #0056b3;
+        }
+
+        button:disabled {
+            background-color: #aaa;
+            cursor: not-allowed;
+        }
+
+        center {
+            display: block;
+            margin-bottom: 10px;
+        }

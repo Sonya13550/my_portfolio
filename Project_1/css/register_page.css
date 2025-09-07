@@ -1,0 +1,38 @@
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: darkgreen;
+}
+
+.form-container {
+    background: rgba(85, 134, 95, 0.6); /* затемнённый фон формы */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+input {
+    width: 65%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    text-align: center;
+    border-radius: 6px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0056b3;
+}

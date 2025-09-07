@@ -1,0 +1,62 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d621d;
+}
+
+/* Верхнее меню */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #228e46;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(0, 255, 208);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 255, 51);
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка выхода */
+.exit-btn {
+    background-color: #ffffff;
+    color: rgb(38, 16, 145);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.exit-btn:hover {
+    background-color: #c82333;
+}
+
+/* Контент */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}

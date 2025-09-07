@@ -1,0 +1,26 @@
+body{
+    background-color: rgb(5, 11, 125);
+}
+.read_stories {
+    background-color: rgb(0, 255, 0);
+    float: left;
+}
+.exit-btn{
+display: block;
+    margin: 0 auto;
+    background-color: rgb(0, 98, 255);
+border-color: rgb(0, 98, 255);
+    color: rgb(13, 255, 0);
+  float: right;
+}
+h1 {
+    color: rgb(210, 227, 255);
+
+}
+h2 {
+    color: rgb(0, 255, 255);
+}
+.content {
+
+    color: aliceblue;
+}

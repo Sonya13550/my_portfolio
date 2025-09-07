@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(75, 117, 181);
+}
+.custom-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 220px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.custom-select img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.center {
+    text-align: center;
+    border: rgb(75, 117, 181);
+    
+}
+textarea {
+    background-color: darkgrey;
+    border: #ccc;
+}
+input {
+    background-color: darkgrey;
+    border: #ccc;
+}
+button {
+background-color: aqua;
+border: aqua;
+}

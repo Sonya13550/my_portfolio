@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(12, 140, 53); /* Ніжно-голубий фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+form {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+select, button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+.content-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+}

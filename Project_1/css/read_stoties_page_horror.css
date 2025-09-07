@@ -1,0 +1,49 @@
+body {
+    background-color: Olive;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h1 {
+    color: rgb(0, 0, 0);
+}
+h2 {
+    color: black;
+    text-align: right;
+}
+h3 {
+    color: black;
+    text-align: left;
+}
+.date, .genre {
+    text-align: right;
+}
+.date h2, .genre h3 {
+    margin: 0;
+}
+label{
+    width: 20px;
+}
+img {
+    display: block;
+    margin: 20px auto; /* Центрируем изображение */
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
+.comment {
+    padding: 10px;
+    margin-top: 15px;
+}
+    button {
+padding: 15px 30px;  /* Увеличиваем отступы */
+font-size: 15px;      /* Увеличиваем шрифт */
+background-color: #4CAF50; /* Цвет фона */
+color: white;         /* Цвет текста */
+border: none;         /* Без рамки */
+border-radius: 5px;   /* Закругленные углы */
+cursor: pointer;      /* Курсор в виде руки при наведении */
+transition: background-color 0.3s ease; /* Плавное изменение фона */
+}
+.comment small {
+    color: black;
+}
