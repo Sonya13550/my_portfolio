@@ -1,15 +1,15 @@
 <?php
-// Підключення до бази даних
+
 require_once('Baza_data_1.php');
 
-// SQL-запит: отримати всі опубліковані історії жанру "Android", відсортовані за датою створення (від новіших до старіших)
+
 $query = "SELECT title, author, content, image_, genre, datecreated FROM stories 
           WHERE published = 1 AND genre = 'Android' ORDER BY datecreated DESC";
 
-// Виконання SQL-запиту
+
 $stmt = sqlsrv_query($conn, $query);
 
-// Якщо сталася помилка — показати її
+
 if (!$stmt) {
     die(print_r(sqlsrv_errors(), true));
 }
@@ -21,7 +21,7 @@ if (!$stmt) {
     <meta charset="UTF-8">
     <title>Історії про андроїдів</title>
     <style>
-        /* Стилізація сторінки */
+      
         body {
             background-color: Olive;
             font-family: Arial, sans-serif;
@@ -60,3 +60,4 @@ if (!$stmt) {
     </style>
 </head>
 <body>
+
