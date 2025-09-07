@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт для написання історій</title>
+    <!-- Підключення зовнішнього стилю для сторінки -->
+    <link rel="stylesheet" href="../css/page_user_readed.css">
+</head>
+<body>
+    <!-- Верхнее меню -->
+    <nav class="navbar">
+        <!-- Логотип на сайті -->
+        <div class="logo">Stoties</div>
+
+        <!-- Навігаційне меню з посиланнями на інші сторінки -->
+        <ul class="nav-links">
+            <!-- Посилання на сторінку для додавання історії -->
+            <li><a href="../html/list_page.html">Додати історію</a></li>
+            <!-- Посилання на сторінку редагування історії -->
+            <li><a href="../php/edit_story.php">Редагувати</a></li>
+            <!-- Посилання на сторінку публікації історії -->
+            <li><a href="../php/publication.php">Опублікувати</a></li>
+        </ul>
+
+        <!-- Кнопка для виходу з облікового запису -->
+        <button class="exit-btn" onclick="exitAccount()">Вийти</button>
+
+        <!-- Скрипт для обробки виходу з облікового запису -->
+        <script>
+            function exitAccount() {
+                alert('Ви вийшли з облікового запису');  // Повідомлення про вихід
+                window.location.href = 'Home_stories.html';  // Перехід на головну сторінку після виходу
+            }
+        </script>
+    </nav>
+
+    <!-- Основний контент сторінки -->
+    <main>
+        <div class="content">
+            <!-- Привітальний заголовок -->
+            <h2>Ласкаво просимо!</h2>
+            <!-- Текстовий абзац з поясненням про сайт -->
+            <p>Це сайт для написання та читання історій.</p>
+        </div>
+    </main>
+</body>
+</html>
