@@ -6,7 +6,7 @@ body {
 }
 
 .form-container {
-    background: rgba(85, 134, 95, 0.6); /* затемнённый фон формы */
+    background: rgba(85, 134, 95, 0.6);
     padding: 20px;
     border-radius: 10px;
     max-width: 400px;
@@ -35,4 +35,5 @@ button {
 
 button:hover {
     background: #0056b3;
+
 }
