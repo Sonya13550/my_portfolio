@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(12, 140, 53); /* Ніжно-голубий фон */
+    background-color: rgb(12, 140, 53); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,4 +30,5 @@ select, button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 600px;
     text-align: center;
+
 }
