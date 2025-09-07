@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма входу</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <h2 style="text-align: center; color: rgb(15, 187, 255);">Вхід</h2> 
+    
+    <div class="form-container">
+        <form action="login_reader.php" method="post" class="registration-form">
+            <div style="text-align: center; color: rgb(18, 38, 118);">
+                <h2>
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" placeholder="Електронна пошта" name="email" required><br><br>
+                
+                <label for="pass">Пароль:</label><br>
+                <input type="password" placeholder="Пароль" name="pass" required><br><br>
+            </h2>
+            </div>
+        </form>
+    </div>
+    <br>
+    <center><button type="submit">Увійти</button></center>
+</body>
+</html>
