@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Додати історію</title>
+    <link rel="stylesheet" href="../css/list_page.css">
+</head>
+<body>
+
+    <div class="center">
+        <h1>Додати нову історію</h1>
+    </div>
+
+
+    <form action="../php/submit_story.php" method="POST">
+        <div class="center">
+
+            <h2><label for="title">Заголовок:</label></h2>
+            <h2><input type="text" id="title" name="title"><br></h2>
+    
+            <h2>Оберіть жанр історії</h2>
+    
+
+            <input type="radio" id="horror" name="genre" value="horror" onclick="updateSelection('../jpg/horror.jpg', 'Жахи')">
+            <label for="horror">Жахи</label>
+    
+        
+            <input type="radio" id="kohannya" name="genre" value="kohannya" onclick="updateSelection('../jpg/kohannya.jpg', 'Кохання')">
+            <label for="love">Кохання</label>
+    
+           
+            <input type="radio" id="fantastic" name="genre" value="fantastic" onclick="updateSelection('../jpg/fantastic.jpg', 'Фантастика')">
+            <label for="fantasy">Фантастика</label>
+    
+        
+            <input type="radio" id="Android" name="genre" value="Android" onclick="updateSelection('../jpg/Android.jpg', 'Андроїди')">
+            <label for="fantasy">Андроїди</label>
+        </div>
+    
+   
+        <div class="center">
+            <h2>Оберіть ілюстрацію</h2>
+            <div class="custom-select">
+            
+                <img id="selected-img" src="../jpg/kohannya.jpg" alt="Кохання">
+                <span id="selected-text">Кохання</span>
+            </div>
+  
+            <input type="hidden" id="selected-image" name="image_" value="../jpg/kohannya.jpg">
+        </div>
+    
+
+        <div class="center">
+            <h2><label for="content">Текст історії:</label></h2>
+            <h2><textarea id="content" name="content" rows="10" cols="50"></textarea><br></h2>
+    
+          
+            <h2><label for="author">Автор:</label></h2>
+            <h2><input type="text" id="author" name="author"><br></h2>
+    
+          
+            <button type="submit"><h2>Додати історію</h2></button>
+        </div>
+    </form>
+    
+   
+    <script>
+        function updateSelection(imgSrc, text) {
+          
+            document.getElementById("selected-img").src = imgSrc;
+      
+            document.getElementById("selected-text").innerText = text;
+        
+            document.getElementById("selected-image").value = imgSrc;  
+        }
+    </script>
+</body>
+</html>
