@@ -1,11 +1,11 @@
 <?php
 
 require_once('Baza_data_1.php');
-//Дані отримуємо
+
 $last_name = $_POST['last_name'];
 $email = $_POST['email'];
 $pass = $_POST['pass'];
-//Не заповнено
+
 if (empty($email) || empty($pass)) {
     echo("Не все заповнено !!! <br>");
 } else {
@@ -15,7 +15,7 @@ if (empty($email) || empty($pass)) {
     if ($stmt === false) {
         die(print_r(sqlsrv_errors(), true));
     }
-//Успішний вхід
+
     if (sqlsrv_has_rows($stmt)) {
         while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
             echo '<script>
@@ -26,7 +26,7 @@ if (empty($email) || empty($pass)) {
             window.location.href = "../php/admin.page.php";
                   }, 0000);
                 </script>';
-//Немає користувача такого у базі
+
         }
     } else {
         echo("Немає такого користувача або пароль невірний !!! <br>");
@@ -39,3 +39,4 @@ if (empty($email) || empty($pass)) {
     }
 }
 ?>
+
