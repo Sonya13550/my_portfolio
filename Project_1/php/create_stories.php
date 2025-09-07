@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=UTF-8');
 require_once('Baza_data_1.php');
 
-// Повідомлення про успішне додавання
+
 if (isset($_GET['success']) && $_GET['success'] === 'true') {
     echo '<script>
         alert("Історія додана!");
@@ -12,9 +12,10 @@ if (isset($_GET['success']) && $_GET['success'] === 'true') {
     </script>';
 }
 
-// Завантаження історій
+
 $query = "SELECT content, author, dateCreated, genre, title, image_ FROM Stories ORDER BY dateCreated DESC";
 $stmt = sqlsrv_query($conn, $query);
 if (!$stmt) {
     die(print_r(sqlsrv_errors(), true));
+
 }
