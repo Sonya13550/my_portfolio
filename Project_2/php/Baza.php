@@ -1,10 +1,10 @@
 <?php
 
 
-$servername = "DESKTOP-PTH1V72\SQLEXPRESS";  
-$username = "Vlad";  
-$password = "Vlad";  
-$dbname = "web_side";  
+$servername = "";  
+$username = "";  
+$password = "";  
+$dbname = "";  
 
 
 $connectionInfo = array( 
@@ -26,3 +26,4 @@ if ($conn) {
     die(print_r(sqlsrv_errors(), true));  
 }
 ?>
+
