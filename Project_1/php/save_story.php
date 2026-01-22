@@ -1,5 +1,5 @@
 <?php
-require_once('Baza_data_1.php'); // Підключаємо файл з налаштуваннями підключення до бази даних
+require_once('Baza_data_1.php'); 
 
 
 echo "<style>
@@ -7,7 +7,7 @@ body { background-color: rgba(8, 94, 23, 0.73);}
 </style>";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
-    // Отримуємо дані з форми
+    
     $genre = $_POST['genre'] ?? ''; 
     $author = $_POST['author'] ?? ''; 
     $content = $_POST['content'] ?? ''; 
@@ -53,4 +53,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
 
