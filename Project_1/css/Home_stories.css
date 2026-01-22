@@ -83,7 +83,7 @@
     .side-image.right.top2 { top: 430px; }
     .side-image.right.top3 { top: 760px; }
 
-    /* Адаптив для маленьких экранов */
+   
     @media (max-width: 900px) {
       body {
         margin: 0 20px;
@@ -94,4 +94,5 @@
       ul, p, li {
         max-width: 100%;
       }
+
     }
