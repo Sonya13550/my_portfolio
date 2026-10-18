@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sonya Edit — Відеомонтаж</title>
 
-  <!-- Font -->
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
 
-  <!-- Tailwind -->
+ 
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
@@ -18,10 +18,10 @@
 
 <body class="bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white">
 
-<!-- HERO -->
+
 <section class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
 
-  <!-- Glow -->
+  
   <div class="absolute w-[500px] h-[500px] bg-pink-500/30 rounded-full blur-3xl -top-40 -left-40"></div>
   <div class="absolute w-[400px] h-[400px] bg-purple-500/30 rounded-full blur-3xl bottom-0 right-0"></div>
 
@@ -29,15 +29,15 @@
 
     <div class="px-6 py-12 flex flex-col md:flex-row items-center gap-10">
 
-      <!-- Text -->
+     
       <div class="text-center md:text-left">
         <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
-          Привіт, я <span class="text-pink-400">Софія</span> 👋<br>
+          Привіт, я <span class="text-pink-400">Софія</span> <br>
           Відеомонтажер
         </h1>
 
         <p class="text-gray-300 text-base sm:text-lg mb-6 max-w-md mx-auto md:mx-0">
-          Створю стильні та трендові відео для TikTok, Reels та YouTube 🚀
+          Створю стильні та трендові відео для TikTok, Reels та YouTube 
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <!-- Image -->
+
       <div class="relative w-full max-w-xs md:max-w-sm">
         <div class="absolute inset-0 bg-gradient-to-tr from-pink-500/40 to-purple-500/40 blur-2xl rounded-3xl"></div>
         <img src="IMG_20260106_165031_284.jpg" class="relative rounded-3xl shadow-2xl border border-white/10 w-full">
@@ -61,18 +61,18 @@
   </div>
 </section>
 
-<!-- ABOUT -->
+
 <section class="py-24 bg-black/40 backdrop-blur">
   <div class="max-w-4xl mx-auto px-6 text-center">
     <h2 class="text-4xl font-bold mb-6">Про мене</h2>
     <p class="text-gray-300 text-lg">
       Я — відеомонтажер, який допомагає блогерам і бізнесу створювати якісний контент.
-      Роблю монтаж зі смаком, додаю ефекти та субтитри ❤️
+      Роблю монтаж зі смаком, додаю ефекти та субтитри 
     </p>
   </div>
 </section>
 
-<!-- PORTFOLIO -->
+
 <section id="portfolio" class="py-24">
   <div class="max-w-[1550px] mx-auto px-4">
 
@@ -80,7 +80,7 @@
 
     <div class="grid md:grid-cols-3 gap-6">
 
-      <!-- Card 1 -->
+     
       <div class="video-card group relative overflow-hidden rounded-3xl border border-white/10 cursor-pointer"
            data-video="відео зі звуком.mp4">
 
@@ -100,7 +100,7 @@
 
       </div>
 
-      <!-- Card 2 -->
+    
       <div class="video-card group relative overflow-hidden rounded-3xl border border-white/10 cursor-pointer"
            data-video="відео без слів.mp4">
 
@@ -120,7 +120,7 @@
 
       </div>
 
-      <!-- Card 3 -->
+   
       <div class="video-card group relative overflow-hidden rounded-3xl border border-white/10 cursor-pointer"
            data-video="2025-09-07-082401900.mp4">
 
@@ -144,31 +144,30 @@
   </div>
 </section>
 
-<!-- LIGHTBOX -->
 <div id="videoLightbox" class="fixed inset-0 bg-black/90 flex items-center justify-center hidden z-50">
   <button id="closeLightbox" class="absolute top-5 right-5 text-white text-3xl">×</button>
   <video id="lightboxVideo" class="max-w-[90%] max-h-[90%]" controls></video>
 </div>
 
-<!-- SERVICES -->
+
 <section class="py-24 bg-black/40 backdrop-blur">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-14">Послуги</h2>
 
     <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
 
-      <div class="bg-white/5 p-6 rounded-2xl">🎬 Монтаж відео</div>
-      <div class="bg-white/5 p-6 rounded-2xl">✨ Ефекти</div>
-      <div class="bg-white/5 p-6 rounded-2xl">💬 Субтитри</div>
-      <div class="bg-white/5 p-6 rounded-2xl">🎵 Музика</div>
-      <div class="bg-white/5 p-6 rounded-2xl">🎙 Звук</div>
-      <div class="bg-white/5 p-6 rounded-2xl">📱 Адаптація</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Монтаж відео</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Ефекти</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Субтитри</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Музика</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Звук</div>
+      <div class="bg-white/5 p-6 rounded-2xl">Адаптація</div>
 
     </div>
   </div>
 </section>
 
-<!-- DETAILS -->
+
 <section class="px-6 py-12">
 
   <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 leading-snug">
@@ -207,7 +206,7 @@
     </h2>
 
     <p class="text-gray-300 mb-4 text-sm sm:text-base">
-      Напишіть мені в Telegram для обговорення монтажу ✨
+      Напишіть мені в Telegram для обговорення монтажу
     </p>
 
     <a href="https://t.me/s_0_N_7_a"
@@ -241,13 +240,13 @@
     </button>
 </form>
 
-<!-- КОММЕНТАРИИ -->
+
 <div id="comments"></div>
-<!-- FOOTER -->
+
 <br><br><footer class="py-6 text-center text-gray-400">
   © 2026 Sonya Edit
 </footer>
-<!-- JS -->
+
 <script>
   const cards = document.querySelectorAll('.video-card');
   const lightbox = document.getElementById('videoLightbox');
@@ -281,7 +280,7 @@
 const form = document.getElementById('commentForm');
 const commentsBlock = document.getElementById('comments');
 
-// загрузка комментариев
+
 function loadComments() {
     fetch('commet.php')
         .then(res => res.text())
@@ -290,7 +289,7 @@ function loadComments() {
         });
 }
 
-// отправка формы БЕЗ перезагрузки
+
 form.addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -303,10 +302,10 @@ form.addEventListener('submit', function(e) {
     .then(res => res.text())
     .then(() => {
 
-        // 💥 сразу обновляем комментарии
+      
         loadComments();
 
-        // очистка формы
+      
         form.reset();
     });
 });
