@@ -1,7 +1,7 @@
 <?php
 include "baza.php";
 
-// ===== ДОБАВЛЕНИЕ =====
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $author = $_POST['author'] ?? '';
@@ -15,11 +15,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
     }
 
-    echo "ok"; // 👈 важно для JS
+    echo "ok";
     exit;
 }
 
-// ===== ВЫВОД =====
+
 $sql = "SELECT author, comment_text, created_at FROM commet ORDER BY created_at DESC";
 $result = $conn->query($sql);
 
