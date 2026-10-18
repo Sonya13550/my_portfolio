@@ -310,7 +310,6 @@ form.addEventListener('submit', function(e) {
     });
 });
 
-// первая загрузка
 loadComments();
 </script>
 </body>
